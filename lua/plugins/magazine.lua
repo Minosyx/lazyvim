@@ -39,7 +39,13 @@ return {
     { "iguanacucumber/mag-nvim-lua", name = "cmp-nvim-lua" },
     { "iguanacucumber/mag-buffer", name = "cmp-buffer" },
     { "iguanacucumber/mag-cmdline", name = "cmp-cmdline" },
-    { "folke/noice.nvim", opts = { presets = { lsp_doc_border = true } } },
+    {
+        "folke/noice.nvim",
+        opts = {
+            presets = { lsp_doc_border = true },
+            views = { hover = { win_options = { winhighlight = "Normal:Pmenu,FloatBorder:Pmenu" } } },
+        },
+    },
 
     "https://codeberg.org/FelipeLema/cmp-async-path",
 }
