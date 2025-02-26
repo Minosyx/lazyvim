@@ -7,6 +7,11 @@ return {
             local types = require("cmp.types")
 
             opts.preselect = types.cmp.PreselectMode.None
+            opts.window = {
+                completion = cmp.config.window.bordered(),
+                documentation = cmp.config.window.bordered(),
+            }
+
             cmp.setup(opts)
         end,
     },
