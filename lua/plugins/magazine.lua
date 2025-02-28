@@ -47,5 +47,16 @@ return {
         },
     },
 
+    {
+        "neovim/nvim-lspconfig",
+        opts = {
+            diagnostics = {
+                float = {
+                    border = "rounded",
+                },
+            },
+        },
+    },
+
     "https://codeberg.org/FelipeLema/cmp-async-path",
 }
