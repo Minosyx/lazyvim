@@ -2,7 +2,6 @@ return {
     "akinsho/bufferline.nvim",
     config = function()
         vim.o.mousemoveevent = true
-        vim.opt.termguicolors = true
 
         local bufferline = require("bufferline")
 

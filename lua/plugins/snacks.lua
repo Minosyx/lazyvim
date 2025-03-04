@@ -58,5 +58,12 @@ return {
         picker = {
             sources = set_fullscreen_for_sources(fullscreen_pickers, true),
         },
+        image = {
+            force = true,
+        },
+        words = {},
+        animate = {
+            fps = 240,
+        },
     },
 }
