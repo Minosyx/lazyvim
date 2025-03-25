@@ -17,6 +17,44 @@ return {
                 "╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝",
             }
 
+            local frieren = {
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠠⠤⠤⠤⠤⠤⠤⠀⣀⣀⣀⠀⠀⢀⡀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⡒⠉⠀⠀⠀⠒⠲⠤⡀⠀⠀⠀⠈⠙⠻⣷⠿⢄⡀⠀⠑⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡔⡵⠋⠀⡆⠀⠀⠀⠀⠀⠀⠈⠳⣄⠀⠀⠀⠀⠀⠑⢄⠙⢪⡓⣌⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢊⠎⠀⠀⢠⠋⠦⡀⠀⠀⠀⠀⠀⠀⠈⢣⡀⢢⠀⠀⠀⠈⢣⡀⢹⣌⢯⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⢃⡎⢀⠀⢠⠇⠀⠀⠈⠒⣵⡲⣖⠖⠀⠀⠠⢣⠈⣇⠀⠀⠀⢰⣵⠀⠘⡆⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢸⠀⣞⣠⣃⠀⠀⠀⠀⠀⠋⣉⡙⠿⡦⣄⡀⠈⡇⢸⠀⠀⠀⠀⠟⣧⠀⢸⡄⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⡄⢠⢿⠯⠜⠁⠀⠀⠀⠀⢸⡇⠀⠀⠀⡀⠈⠁⢺⠘⠀⠀⠀⠀⢰⢸⠀⢸⣇⠈⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣬⠃⠃⢸⢯⠞⠙⠦⠀⠀⠀⠀⠈⢀⣶⢾⣿⣿⡿⣧⢾⠛⠀⠀⠀⠀⠘⢸⣠⣃⣿⡀⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠀⢰⢻⠈⢠⣐⣤⣀⠀⠀⠀⠀⠸⠃⠘⡷⢽⠿⠁⢸⣸⡆⠀⠀⠀⣤⢸⢁⣠⠤⠬⠭⠭⠭⣭⣭⠭⢭⡭⠟⣩⠆",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡀⠀⢻⣠⣿⠻⣟⢿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⢧⠀⠀⢠⢿⡏⠙⢢⠀⠀⠀⠀⠀⡼⠨⢔⣯⠴⠋⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⡀⠀⣇⠈⠙⠋⠉⢸⣇⠄⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠸⡀⠀⡌⢸⣁⣤⣊⡀⠤⠤⣖⣪⠖⠚⠉⠁⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢤⣃⣇⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠄⠀⠀⠀⠀⠘⠀⠀⣇⣞⣄⣈⣽⠟⣆⣀⡤⠚⠁⠀⣆⠀⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠯⠭⠝⢻⣿⡄⢸⢧⠀⠀⠀⠀⠀⠒⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⠞⠉⠀⣷⠀⡇⡇⠀⠀⠀⢿⡆⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⢹⣼⠒⠳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠈⡇⠀⢸⢰⣿⢸⢹⠀⠀⠀⠀⡘⣷⠀⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡌⡼⠈⠀⠀⢿⡷⢄⡀⠀⠀⠀⠀⠀⠀⢀⡠⠔⠉⠀⠀⠀⡇⠀⢸⢸⣿⣏⡇⠀⠀⠀⠀⡇⢋⠇⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣧⠇⠀⠀⠀⣾⡇⠀⡉⡖⢤⣀⣀⣤⣶⣛⣀⣠⣤⣤⣤⣤⣇⠀⢸⡞⣻⡞⠀⠀⠀⠀⠀⣷⢸⡸⡀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡘⠀⠀⠀⢰⠛⠃⣰⢁⣷⡿⣿⣉⣉⡭⠭⠭⠭⠽⠷⠯⠤⠤⡵⢸⣇⣷⠁⠀⠀⠀⠀⠀⢻⢸⡇⢣⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⠃⠀⠀⣠⠸⠀⢰⠃⡼⡸⡇⠘⣿⣿⠀⠀⠀⠀⠀⠀⠀⣀⣀⣡⣸⡿⠁⠀⠀⠀⠀⠀⢰⢸⢸⡇⢸⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡇⠀⠀⢀⣇⠇⢠⢃⠜⠹⣹⣁⣈⣉⣉⣉⣉⣉⣉⣉⣉⡁⠤⠤⠤⡼⠁⠀⠀⠀⠀⠀⠆⢸⢸⣾⢣⡎⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣜⡜⢠⠟⠁⣀⡀⢀⡏⡜⢡⡏⢸⠀⡇⠀⠀⠀⠀⠀⠀⢰⠃⠀⠀⠀⠀⠀⢰⠀⣸⣰⠷⠃⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡜⠀⠀⠀⢠⠹⢡⠇⠀⠀⠉⠪⣽⣧⡇⠸⡇⠸⠤⡧⠤⠃⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⠀⠘⠀⣇⠋⠳⣄⠀⠀⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⠀⢀⠔⡽⠀⠀⠀⠀⣎⢀⠏⠀⠀⠀⠀⢠⠃⡘⢀⠏⢹⠀⡄⠁⠀⠀⠀⠀⠀⢰⠃⠀⠀⠀⠀⠀⠀⡇⠀⡏⠀⠀⠘⢷⡄⠀⠀⠀",
+                "⠀⠀⠀⠀⠀⠀⡰⠋⣼⠆⠀⠀⠀⢸⡎⡜⠀⠀⠀⠀⠀⡞⢠⠇⡜⠀⢸⠀⡇⢰⠀⠀⠀⠀⠀⠸⠀⠀⠀⠀⠀⠀⠀⡇⠀⡇⠀⠀⠀⠈⢿⡀⠀⠀",
+                "⠀⠀⠀⠀⢠⠞⠀⡸⡜⠀⠀⠀⠀⠸⢰⠁⠀⠀⠀⠀⣰⠀⡞⢰⡧⢤⢾⠀⡇⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⡇⠀⠀⠀⠀⠈⣿⠀⠀",
+                "⠀⠀⠀⡠⠁⠀⢰⢻⠃⠀⠀⠀⢀⣇⡏⠀⠀⠀⠀⢠⠇⢠⠁⡾⠀⠘⢹⠀⡇⠘⡇⠀⠀⠀⠀⠀⡇⡇⠀⠀⠀⠀⠀⡇⠀⠁⠀⠀⠀⠀⠀⢹⣇⠀",
+                "⠀⢀⡔⠁⠀⠀⡆⡌⠀⠀⠀⠀⢸⢸⠀⠀⠀⠀⠀⡜⠀⡞⢰⠷⠿⠿⠿⠀⢿⠀⡇⠀⠀⠀⠀⠀⡇⡇⠀⠀⠀⠀⠀⡇⠀⡀⠀⠀⠀⠀⠀⠀⣿⡄",
+                "⢀⠎⠀⠀⠀⢸⢡⡇⠀⠀⠀⠀⡆⡆⠀⠀⠀⠀⢠⠇⢠⠁⡞⠀⠀⠀⠀⠀⢸⠀⠁⠀⠀⠀⠀⢰⡇⠁⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⢹⣇",
+            }
+
+            local Header = {
+                Logo = {},
+                Frieren = {},
+                Alternate = {},
+            }
+
+            local header = Header.Alternate
+
             -- Cyberpunk color palette
             local colors = {
                 { name = "AlphaNeonBlue", base = "#00FFFF" },
@@ -62,13 +100,32 @@ return {
                 return string.format("#%02X%02X%02X", r, g, b)
             end
 
-            -- Update header with glitch and fade
+            -- File to store the header state
+            local state_file = vim.fn.stdpath("cache") .. "/alpha_header_state.txt"
+
+            -- Read the previous state and toggle it
+            if header == Header.Alternate then
+                if vim.fn.filereadable(state_file) == 1 then
+                    local state = vim.fn.readfile(state_file)[1]
+                    header = state == "logo" and Header.Frieren or Header.Logo
+                end
+                vim.fn.writefile({ header == Header.Logo and "logo" or "frieren" }, state_file)
+            end
+
+            -- Update header function (glitch only for logo, adjust position for frieren)
             local function update_header()
                 local header_lines = {}
-                for _, line in ipairs(logo) do
-                    local glitched_line = glitch_line(line)
-                    table.insert(header_lines, glitched_line)
+
+                if header == Header.Logo then
+                    local selected_header = logo
+                    for _, line in ipairs(selected_header) do
+                        table.insert(header_lines, glitch_line(line))
+                    end
+                elseif header == Header.Frieren then
+                    local selected_header = frieren
+                    header_lines = selected_header
                 end
+
                 local hl_group = "AlphaDynamic"
                 local base_color = colors[current_color_idx].base
                 local faded_color = adjust_brightness(base_color, brightness)
@@ -87,11 +144,15 @@ return {
                 local total_plugins = stats.count -- Total number of plugins
                 local startup_time = string.format("%.2f", stats.startuptime) -- in ms
                 local footer_text =
-                    string.format("Loaded %d/%d plugins in %s ms ⚡", loaded_plugins, total_plugins, startup_time)
+                    string.format("⚡Neovim loaded %d/%d plugins in %sms", loaded_plugins, total_plugins, startup_time)
                 dashboard.section.footer.val = footer_text
                 -- Mimic snacks.nvim footer style with a subtle cyan color
                 vim.api.nvim_set_hl(0, "AlphaFooter", { fg = "#56B6C2" }) -- Cyan from snacks.nvim
                 dashboard.section.footer.opts = { position = "center", hl = "AlphaFooter" }
+            end
+
+            if header == Header.Frieren then
+                dashboard.config.layout[1] = { type = "padding", val = 1 }
             end
 
             -- Ensure true color support
