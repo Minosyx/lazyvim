@@ -9,7 +9,7 @@ return {
             local win_opt = {
                 col_offset = 0,
                 side_padding = 0,
-                winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+                winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None,CursorLine:PmenuSel",
             }
             opts.preselect = types.cmp.PreselectMode.None
             opts.window = {
