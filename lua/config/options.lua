@@ -10,3 +10,5 @@ vim.o.shiftwidth = 4
 
 -- Completion transparency
 vim.o.pumblend = 0
+
+vim.o.pumheight = 20
