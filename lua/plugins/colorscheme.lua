@@ -9,8 +9,8 @@ return {
         "olimorris/onedarkpro.nvim",
         opts = function(_, opts)
             opts.highlights = {
-                ["@variable"] = { fg = "#E18254" },
-                ["@parameter"] = { fg = "#E18254" },
+                ["@variable"] = { fg = "#BF6289" },
+                ["@parameter"] = { fg = "#BF6289" },
 
                 Visual = { bg = "#404754" },
             }
