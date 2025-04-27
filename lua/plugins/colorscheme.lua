@@ -14,6 +14,12 @@ return {
 
                 Visual = { bg = "#404754" },
             }
+            opts.colors = {
+                cursorline = "#1d1e1f",
+            }
+            opts.options = {
+                cursorline = true,
+            }
         end,
     },
     {
