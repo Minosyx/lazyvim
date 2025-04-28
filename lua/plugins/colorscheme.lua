@@ -11,11 +11,12 @@ return {
             opts.highlights = {
                 ["@variable"] = { fg = "#BF6289" },
                 ["@parameter"] = { fg = "#BF6289" },
+                NonText = { bg = "None", fg = "#69696D" },
 
-                Visual = { bg = "#404754" },
+                Visual = { bg = "#333333" },
             }
             opts.colors = {
-                cursorline = "#1d1e1f",
+                cursorline = "#1D1E1F",
             }
             opts.options = {
                 cursorline = true,
