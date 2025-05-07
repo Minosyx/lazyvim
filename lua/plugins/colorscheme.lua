@@ -14,6 +14,7 @@ return {
                 NonText = { bg = "None", fg = "#69696D" },
 
                 Visual = { bg = "#333333" },
+                LeapBackdrop = { fg = "#777777" },
             }
             opts.colors = {
                 cursorline = "#1D1E1F",
