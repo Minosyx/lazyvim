@@ -4,7 +4,7 @@ return {
         icons = {
             rules = {
                 { pattern = "ai", icon = "✦", color = "cyan" },
-                { plugin = "CopilotChat.nvim", icon = "", color = "green" },
+                { plugin = "CopilotChat.nvim", icon = "✦", color = "green" },
             },
         },
     },

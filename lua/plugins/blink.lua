@@ -41,9 +41,9 @@ return {
 
                                 -- 1. Check for Copilot source explicitly
                                 if source_name == "copilot" then
-                                    icon = ""
+                                    icon = "✦"
 
-                                    -- 2. Check for Path source
+                                -- 2. Check for Path source
                                 elseif vim.tbl_contains({ "Path" }, ctx.source_name) then
                                     local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
                                     if dev_icon then

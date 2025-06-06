@@ -58,10 +58,19 @@ return {
         picker = {
             sources = set_fullscreen_for_sources(fullscreen_pickers, true),
         },
+        styles = {
+            lazygit = {
+                width = 0,
+                height = 0,
+            },
+        },
+        statuscolumn = {
+            enabled = true,
+        },
         image = {
             force = true,
         },
-        words = {},
+        words = { enabled = true },
         animate = {
             fps = 240,
         },
