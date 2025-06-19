@@ -1,4 +1,6 @@
-if vim.g.neovide then
+local enabled = false
+
+if vim.g.neovide and enabled then
     return {}
 end
 

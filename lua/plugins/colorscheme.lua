@@ -21,6 +21,7 @@ return {
             }
             opts.options = {
                 cursorline = true,
+                transparency = true,
             }
         end,
     },

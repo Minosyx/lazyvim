@@ -27,9 +27,9 @@ return {
                 },
             },
             menu = {
-                max_height = 20,
+                max_height = 30,
                 border = "rounded",
-                winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None,CursorLine:PmenuSel",
+                winhighlight = "Search:None,CursorLine:PmenuSel",
                 draw = {
                     columns = { { "kind_icon" }, { "label", gap = 1 }, { "kind" } },
                     components = {
@@ -82,7 +82,6 @@ return {
             documentation = {
                 window = {
                     border = "rounded",
-                    winhighlight = "Normal:Pmenu,FloatBorder:Pmenu",
                 },
             },
         },
@@ -90,7 +89,6 @@ return {
             enabled = true,
             window = {
                 border = "rounded",
-                winhighlight = "Normal:Pmenu,FloatBorder:Pmenu",
                 show_documentation = false,
             },
         },
