@@ -52,8 +52,7 @@ local fullscreen_pickers = {
 }
 
 return {
-    "snacks.nvim",
-
+    "folke/snacks.nvim",
     opts = {
         picker = {
             sources = set_fullscreen_for_sources(fullscreen_pickers, true),
@@ -73,6 +72,12 @@ return {
         words = { enabled = true },
         animate = {
             fps = 240,
+        },
+        terminal = {
+            win = {
+                style = "float",
+                border = "rounded",
+            },
         },
     },
 }
