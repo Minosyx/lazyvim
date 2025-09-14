@@ -4,6 +4,10 @@ return {
     opts = {
         options = {
             -- theme = "horizon",
+            section_separators = {
+                left = "",
+                right = "",
+            },
         },
     },
 }

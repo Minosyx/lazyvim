@@ -11,6 +11,8 @@ return {
             opts.highlights = {
                 ["@variable"] = { fg = "#BF6289" },
                 ["@parameter"] = { fg = "#BF6289" },
+                -- ["@constant"] = { fg = "#6f8661" },
+                ["@number"] = { fg = "#56837E" },
                 NonText = { bg = "None", fg = "#69696D" },
 
                 Visual = { bg = "#333333" },

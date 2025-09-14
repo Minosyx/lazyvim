@@ -52,6 +52,7 @@ local function set_highlights_blink()
     hl(0, "PmenuSel", { bg = "#363636", fg = "NONE" })
     -- hl(0, "PmenuSel", { bg = "#9C9C9C", fg = "NONE" })
     -- hl(0, "Pmenu", { fg = "#9C9C9C", bg = "NONE" })
+    hl(0, "Pmenu", { bg = "NONE" })
 
     hl(0, "BlinkCmpLabelDeprecated", { fg = "#7E8294", bg = "NONE", strikethrough = true })
     -- hl(0, "BlinkCmpLabelMatch", { fg = "#82AAFF", bg = "NONE", bold = true })
