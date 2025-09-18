@@ -1,22 +1,19 @@
 return {
     "akinsho/bufferline.nvim",
-    config = function()
+    init = function()
         vim.o.mousemoveevent = true
-
-        local bufferline = require("bufferline")
-
-        bufferline.setup({
-            options = {
-                hover = {
-                    enabled = true,
-                    delay = 100,
-                    reveal = { "close" },
-                },
-                always_show_bufferline = false,
-                indicator = {
-                    style = "icon",
-                },
-            },
-        })
     end,
+    opts = {
+        options = {
+            hover = {
+                enabled = true,
+                delay = 100,
+                reveal = { "close" },
+            },
+            always_show_bufferline = false,
+            indicator = {
+                style = "icon",
+            },
+        },
+    },
 }
