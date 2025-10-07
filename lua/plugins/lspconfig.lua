@@ -1,7 +1,7 @@
 return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
-    ---@type PluginLspOpts
+    -- @type PluginLspOpts
     opts = {
         diagnostics = {
             float = {
@@ -15,7 +15,7 @@ return {
         },
     },
 
-    config = function(_, opts)
+    init = function()
         local copilot_enabled = vim.lsp.is_enabled("copilot")
 
         vim.keymap.set("n", "<leader>ae", function()

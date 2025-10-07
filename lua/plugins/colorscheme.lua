@@ -17,6 +17,7 @@ return {
                 Visual = { bg = "#333333" },
                 LeapBackdrop = { fg = "#777777" },
                 PmenuThumb = { bg = "#333333" },
+                Cursor = { bg = "#00CED1" },
             }
             opts.colors = {
                 cursorline = "#1D1E1F",
