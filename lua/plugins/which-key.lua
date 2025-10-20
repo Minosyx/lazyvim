@@ -1,5 +1,6 @@
 return {
     "folke/which-key.nvim",
+    event = "VeryLazy",
     opts = {
         icons = {
             rules = {
@@ -7,6 +8,9 @@ return {
                 { pattern = "jujutsu", icon = "⚔️", color = "blue" },
                 { plugin = "CopilotChat.nvim", icon = "✦", color = "green" },
             },
+        },
+        spec = {
+            { "gF", group = "Go to file and line under cursor" },
         },
     },
     keys = {

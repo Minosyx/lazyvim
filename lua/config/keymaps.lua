@@ -74,3 +74,21 @@ end, { noremap = true, desc = "Comment textobject with highlight" })
 vim.keymap.set("n", "gcc", function()
     return require("undo-glow").comment_line()
 end, { noremap = true, desc = "Toggle comment line with highlight", expr = true })
+
+vim.keymap.set({ "o" }, "p", function()
+    local path = vim.fn.expand("%:.") .. ":"
+    vim.fn.line(".")
+    vim.fn.setreg("+", path)
+    vim.fn.setreg('"', path)
+    vim.notify("Yanked: " .. path)
+    return "<ESC>"
+end, { noremap = true, desc = "Yank relative file path", expr = true })
+
+vim.keymap.set({ "o" }, "P", function()
+    local path = vim.fn.expand("%:p") .. ":"
+    vim.fn.line(".")
+    vim.fn.setreg("+", path)
+    vim.fn.setreg('"', path)
+    vim.notify("Yanked: " .. path)
+    return "<ESC>"
+end, { noremap = true, desc = "Yank absolute file path", expr = true })
