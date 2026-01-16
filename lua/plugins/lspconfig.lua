@@ -21,10 +21,10 @@ return {
         vim.keymap.set("n", "<leader>ae", function()
             copilot_enabled = not copilot_enabled
             if copilot_enabled then
-                vim.cmd("LspStart copilot")
+                vim.cmd("lsp enable copilot")
                 vim.notify("Copilot LSP enabled")
             else
-                vim.cmd("LspStop copilot")
+                vim.cmd("lsp disable copilot")
                 vim.notify("Copilot LSP disabled")
             end
         end, { desc = "Toggle Copilot" })
