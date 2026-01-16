@@ -76,8 +76,7 @@ vim.keymap.set("n", "gcc", function()
 end, { noremap = true, desc = "Toggle comment line with highlight", expr = true })
 
 vim.keymap.set({ "o" }, "p", function()
-    local path = vim.fn.expand("%:.") .. ":"
-    vim.fn.line(".")
+    local path = vim.fn.expand("%:.") .. ":" .. vim.fn.line(".")
     vim.fn.setreg("+", path)
     vim.fn.setreg('"', path)
     vim.notify("Yanked: " .. path)
@@ -85,8 +84,7 @@ vim.keymap.set({ "o" }, "p", function()
 end, { noremap = true, desc = "Yank relative file path", expr = true })
 
 vim.keymap.set({ "o" }, "P", function()
-    local path = vim.fn.expand("%:p") .. ":"
-    vim.fn.line(".")
+    local path = vim.fn.expand("%:p") .. ":" .. vim.fn.line(".")
     vim.fn.setreg("+", path)
     vim.fn.setreg('"', path)
     vim.notify("Yanked: " .. path)

@@ -8,6 +8,9 @@ return {
         event = { "VeryLazy" },
         ---@type UndoGlow.Config
         opts = {
+            fallback_for_transparency = {
+                bg = "#000000",
+            },
             animation = {
                 enabled = true,
                 duration = 300,

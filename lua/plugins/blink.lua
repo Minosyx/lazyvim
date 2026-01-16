@@ -1,7 +1,6 @@
 return {
     "saghen/blink.cmp",
     dependencies = {
-        "onsails/lspkind.nvim",
         "nvim-tree/nvim-web-devicons",
         "xzbdmw/colorful-menu.nvim",
         "fang2hou/blink-copilot",
@@ -35,7 +34,6 @@ return {
                     components = {
                         kind_icon = {
                             text = function(ctx)
-                                local lspkind = require("lspkind")
                                 local icon = ctx.kind_icon
                                 local source_name = ctx.source_name
 
@@ -50,9 +48,7 @@ return {
                                         icon = dev_icon
                                     end
                                 else
-                                    icon = require("lspkind").symbolic(ctx.kind, {
-                                        mode = "symbol",
-                                    })
+                                    icon = require("blink.cmp.config").appearance.kind_icons[ctx.kind] or ctx.kind_icon
                                 end
                                 return icon .. ctx.icon_gap
                             end,

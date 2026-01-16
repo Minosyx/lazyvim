@@ -15,3 +15,8 @@ vim.o.pumblend = 0
 vim.o.winblend = 0
 
 vim.o.pumheight = 20
+
+vim.o.winborder = "rounded"
+
+vim.o.undofile = true
+vim.o.undodir = vim.fn.expand("~/.undodir")
