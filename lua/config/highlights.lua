@@ -25,6 +25,7 @@ local function set_highlights_blink()
     local green = "#9ece6a" -- Text, Snippets, Copilot
     local green1 = "#73daca" -- Structs, Modules
     local teal = "#4abaaf" -- Use for Units?
+    local green2 = "#12e6b5" -- Snippets
 
     hl(0, "BlinkCmpKindField", { bg = "None", fg = blue5 }) -- Lighter blue for fields
     hl(0, "BlinkCmpKindProperty", { bg = "None", fg = blue5 })
@@ -48,7 +49,7 @@ local function set_highlights_blink()
     hl(0, "BlinkCmpKindFile", { bg = "None", fg = cyan })
 
     hl(0, "BlinkCmpKindUnit", { bg = "None", fg = teal })
-    hl(0, "BlinkCmpKindSnippet", { bg = "None", fg = green })
+    hl(0, "BlinkCmpKindSnippet", { bg = "None", fg = green2 })
     hl(0, "BlinkCmpKindFolder", { bg = "None", fg = cyan })
 
     hl(0, "BlinkCmpKindMethod", { bg = "None", fg = blue })
