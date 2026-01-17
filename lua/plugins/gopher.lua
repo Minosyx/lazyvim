@@ -1,3 +1,4 @@
+require("gopher")
 return {
     "olexsmir/gopher.nvim",
     ft = "go",
@@ -6,5 +7,6 @@ return {
     end,
     ---@module "gopher"
     ---@type gopher.Config
+    ---@diagnostic disable-next-line: missing-fields
     opts = {},
 }
