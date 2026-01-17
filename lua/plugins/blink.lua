@@ -5,11 +5,12 @@ return {
         "nvim-tree/nvim-web-devicons",
         "xzbdmw/colorful-menu.nvim",
         "fang2hou/blink-copilot",
+        "nvim-mini/mini.snippets",
     },
-    version = "1.*",
+    version = "*",
     ---@type blink.cmp.Config
     opts = {
-        snippets = { preset = "mini_snippets" },
+        snippets = { preset = "mini_snippets", score_offset = 5 },
         sources = {
             default = { "copilot", "lsp", "buffer", "snippets", "path" },
             providers = {
@@ -22,6 +23,7 @@ return {
             },
         },
         fuzzy = {
+            implementation = "prefer_rust_with_warning",
             sorts = {
                 "exact",
                 "score",
@@ -30,6 +32,9 @@ return {
         },
         keymap = {
             preset = "enter",
+            ["<C-j>"] = { "select_next", "fallback_to_mappings" },
+            ["<C-k>"] = { "select_prev", "fallback_to_mappings" },
+            ["<C-n>"] = { "show_signature", "hide_signature", "fallback" },
             ["<C-1>"] = {
                 function(cmp)
                     cmp.accept({ index = 1 })
