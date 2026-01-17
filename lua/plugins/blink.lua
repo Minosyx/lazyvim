@@ -1,3 +1,4 @@
+require("blink-cmp")
 return {
     "saghen/blink.cmp",
     dependencies = {
