@@ -1,3 +1,4 @@
+require("blink-cmp")
 return {
     "saghen/blink.cmp",
     dependencies = {
@@ -6,10 +7,11 @@ return {
         "fang2hou/blink-copilot",
     },
     version = "1.*",
+    ---@type blink.cmp.Config
     opts = {
         snippets = { preset = "mini_snippets" },
         sources = {
-            default = { "copilot" },
+            default = { "copilot", "lsp", "buffer", "snippets", "path" },
             providers = {
                 copilot = {
                     name = "copilot",
@@ -17,6 +19,66 @@ return {
                     score_offset = 100,
                     async = true,
                 },
+            },
+        },
+        fuzzy = {
+            sorts = {
+                "exact",
+                "score",
+                "sort_text",
+            },
+        },
+        keymap = {
+            preset = "super-tab",
+            ["<A-1>"] = {
+                function(cmp)
+                    cmp.accept({ index = 1 })
+                end,
+            },
+            ["<A-2>"] = {
+                function(cmp)
+                    cmp.accept({ index = 2 })
+                end,
+            },
+            ["<A-3>"] = {
+                function(cmp)
+                    cmp.accept({ index = 3 })
+                end,
+            },
+            ["<A-4>"] = {
+                function(cmp)
+                    cmp.accept({ index = 4 })
+                end,
+            },
+            ["<A-5>"] = {
+                function(cmp)
+                    cmp.accept({ index = 5 })
+                end,
+            },
+            ["<A-6>"] = {
+                function(cmp)
+                    cmp.accept({ index = 6 })
+                end,
+            },
+            ["<A-7>"] = {
+                function(cmp)
+                    cmp.accept({ index = 7 })
+                end,
+            },
+            ["<A-8>"] = {
+                function(cmp)
+                    cmp.accept({ index = 8 })
+                end,
+            },
+            ["<A-9>"] = {
+                function(cmp)
+                    cmp.accept({ index = 9 })
+                end,
+            },
+            ["<A-0>"] = {
+                function(cmp)
+                    cmp.accept({ index = 10 })
+                end,
             },
         },
         completion = {
@@ -31,8 +93,14 @@ return {
                 border = "rounded",
                 winhighlight = "Search:None,CursorLine:PmenuSel",
                 draw = {
-                    columns = { { "kind_icon" }, { "label", gap = 1 }, { "kind" } },
+                    columns = { { "item_idx" }, { "kind_icon" }, { "label", gap = 1 }, { "kind" } },
                     components = {
+                        item_idx = {
+                            text = function(ctx)
+                                return ctx.idx == 10 and "0" or ctx.idx >= 10 and " " or tostring(ctx.idx)
+                            end,
+                            highlight = "BlinkCmpItemIdx",
+                        },
                         kind_icon = {
                             text = function(ctx)
                                 local kind_icon = ctx.kind_icon
