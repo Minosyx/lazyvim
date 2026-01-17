@@ -1,3 +1,18 @@
+local function ft(key_specific_args)
+    require("leap").leap(vim.tbl_deep_extend("keep", key_specific_args, {
+        inputlen = 1,
+        inclusive = true,
+        opts = {
+            -- Force autojump.
+            labels = "",
+            -- Match the modes where you don't need labels (`:h mode()`).
+            safe_labels = vim.fn.mode(1):match("o") and "" or nil,
+        },
+    }))
+end
+
+local clever = require("leap.user").with_traversal_keys
+local clever_f, clever_t = clever("f", "F"), clever("t", "T")
 return {
     {
         "https://codeberg.org/andyg/leap.nvim",
@@ -22,6 +37,38 @@ return {
                 end,
                 mode = { "n" },
                 desc = "Remote operation",
+            },
+            {
+                "f",
+                function()
+                    ft({ opts = clever_f })
+                end,
+                mode = { "n", "x", "o" },
+                desc = "Move to next char",
+            },
+            {
+                "F",
+                function()
+                    ft({ backward = true, opts = clever_f })
+                end,
+                mode = { "n", "x", "o" },
+                desc = "Move to prev char",
+            },
+            {
+                "t",
+                function()
+                    ft({ offset = -1, opts = clever_t })
+                end,
+                mode = { "n", "x", "o" },
+                desc = "Move before next char",
+            },
+            {
+                "T",
+                function()
+                    ft({ backward = true, offset = 1, opts = clever_f })
+                end,
+                mode = { "n", "x", "o" },
+                desc = "Move before prev char",
             },
         },
         config = function(_, opts)
