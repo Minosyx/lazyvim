@@ -7,11 +7,18 @@ return {
     "tiagovla/tokyodark.nvim",
     {
         "olimorris/onedarkpro.nvim",
+        lazy = false,
+        priority = 1000,
         opts = function(_, opts)
             opts.highlights = {
                 ["@variable"] = { fg = "#BF6289" },
                 ["@parameter"] = { fg = "#BF6289" },
                 ["@number"] = { fg = "#56837E" },
+                ["@constant"] = { fg = "#D1AA60", bold = true },
+                ["@type.builtin"] = { fg = "#A891D4", bold = true },
+                ["@lsp.type.class"] = { fg = "#44BBBB", bold = true },
+                Type = { fg = "#A891D4", bold = true },
+                LspReferenceText = { bg = "#303030" },
                 NonText = { bg = "None", fg = "#69696D" },
 
                 Visual = { bg = "#333333" },
@@ -25,6 +32,21 @@ return {
             opts.options = {
                 cursorline = true,
                 transparency = true,
+            }
+            opts.styles = {
+                types = "NONE",
+                methods = "NONE",
+                numbers = "NONE",
+                strings = "NONE",
+                comments = "italic",
+                keywords = "bold,italic",
+                constants = "NONE",
+                functions = "italic",
+                operators = "NONE",
+                variables = "NONE",
+                parameters = "NONE",
+                conditionals = "italic",
+                virtual_text = "NONE",
             }
         end,
     },
