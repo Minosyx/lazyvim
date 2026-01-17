@@ -29,7 +29,7 @@ return {
             },
         },
         keymap = {
-            preset = "super-tab",
+            preset = "enter",
             ["<C-1>"] = {
                 function(cmp)
                     cmp.accept({ index = 1 })
