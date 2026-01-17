@@ -65,10 +65,10 @@ return {
             {
                 "T",
                 function()
-                    ft({ backward = true, offset = 1, opts = clever_f })
+                    ft({ backward = true, offset = 1, opts = clever_t })
                 end,
                 mode = { "n", "x", "o" },
-                desc = "Move before prev char",
+                desc = "Move after prev char",
             },
         },
         config = function(_, opts)
