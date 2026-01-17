@@ -7,6 +7,7 @@ return {
     },
     version = "1.*",
     opts = {
+        snippets = { preset = "mini_snippets" },
         sources = {
             default = { "copilot" },
             providers = {
@@ -34,36 +35,34 @@ return {
                     components = {
                         kind_icon = {
                             text = function(ctx)
-                                local icon = ctx.kind_icon
+                                local kind_icon = ctx.kind_icon
                                 local source_name = ctx.source_name
 
-                                -- 1. Check for Copilot source explicitly
                                 if source_name == "copilot" then
-                                    icon = "✦"
+                                    kind_icon = "✦"
 
-                                -- 2. Check for Path source
-                                elseif vim.tbl_contains({ "Path" }, ctx.source_name) then
-                                    local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
-                                    if dev_icon then
-                                        icon = dev_icon
-                                    end
+                                -- elseif vim.tbl_contains({ "Path" }, ctx.source_name) then
+                                --     local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
+                                --     if dev_icon then
+                                --         icon = dev_icon
+                                --     end
                                 else
-                                    icon = require("blink.cmp.config").appearance.kind_icons[ctx.kind] or ctx.kind_icon
+                                    kind_icon, _, _ = require("mini.icons").get("lsp", ctx.kind)
                                 end
-                                return icon .. ctx.icon_gap
+                                return kind_icon .. ctx.icon_gap
                             end,
 
-                            highlight = function(ctx)
-                                local hl = ctx.kind_hl
-                                if vim.tbl_contains({ "Path" }, ctx.source_name) then
-                                    local dev_icon, dev_hl = require("nvim-web-devicons").get_icon(ctx.label)
-                                    if dev_icon then
-                                        hl = dev_hl
-                                    end
-                                end
-                                return hl
-                            end,
+                            -- highlight = function(ctx)
+                            --     local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+                            --     return hl
+                            -- end,
                         },
+                        -- kind = {
+                        --     highlight = function(ctx)
+                        --         local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+                        --         return hl
+                        --     end,
+                        -- },
                         label = {
                             text = function(ctx)
                                 return require("colorful-menu").blink_components_text(ctx)
