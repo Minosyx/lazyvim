@@ -1,3 +1,5 @@
+local debounce_ms = 150
+local timer = vim.loop.new_timer()
 return {
     {
         "y3owk1n/undo-glow.nvim",
@@ -76,12 +78,22 @@ return {
             vim.api.nvim_create_autocmd("CursorMoved", {
                 desc = "Highlight when cursor moved significantly",
                 callback = function()
-                    require("undo-glow").cursor_moved({
-                        animation = {
-                            animation_type = "slide",
-                            duration = 800,
-                        },
-                    })
+                    pcall(function()
+                        timer:stop()
+                    end)
+
+                    timer:start(
+                        debounce_ms,
+                        0,
+                        vim.schedule_wrap(function()
+                            require("undo-glow").cursor_moved({
+                                animation = {
+                                    animation_type = "slide",
+                                    duration = 800,
+                                },
+                            })
+                        end)
+                    )
                 end,
             })
         end,
