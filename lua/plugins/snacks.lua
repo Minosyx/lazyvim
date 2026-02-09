@@ -73,6 +73,14 @@ return {
         animate = {
             fps = 240,
         },
+        scroll = {
+            filter = function(buf)
+                return vim.g.snacks_scroll ~= false
+                    and vim.b[buf].snacks_scroll ~= false
+                    and vim.bo[buf].buftype ~= "terminal"
+                    and vim.bo[buf].filetype ~= "blink-cmp-menu"
+            end,
+        },
         terminal = {
             win = {
                 style = "float",
