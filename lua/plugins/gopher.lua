@@ -1,4 +1,3 @@
-require("gopher")
 return {
     "olexsmir/gopher.nvim",
     ft = "go",
