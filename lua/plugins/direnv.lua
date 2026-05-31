@@ -1,6 +1,6 @@
 return {
     "NotAShelf/direnv.nvim",
     opts = {
-        autoload_direnv = true,
+        autoload_direnv = false,
     },
 }
