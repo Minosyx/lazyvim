@@ -9,7 +9,7 @@ return {
     version = "*",
     ---@type blink.cmp.Config
     opts = {
-        snippets = { preset = "mini_snippets", score_offset = 5 },
+        snippets = { preset = "mini_snippets" },
         sources = {
             default = { "copilot", "lsp", "buffer", "snippets", "path" },
             providers = {
